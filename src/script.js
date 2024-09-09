@@ -59,7 +59,7 @@ function play() {
     clearEdits();
 
     update();
-    btn.innerHTML = "Pause";
+    btn.innerHTML = "Edit";
   } else {
     //pause
 
