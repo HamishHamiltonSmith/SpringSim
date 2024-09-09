@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Springs</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="attributeContainer" id="massBox">
+    <h3>Mass: </h3>
+    <input id="massInput" type="range" />
+    <h1 id="massDisplay"></h1>
+  </div>
+
+  <div class="attributeContainer" id="densityBox">
+    <h3 style="font-size:1vw;">Air Density: </h3>
+    <input value="1.28" id="densityInput" type="range" />
+    <h1 id="densityDisplay"></h1>
+  </div>
+
+  <div id="container">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <canvas id="canvas"></canvas>
+    <button id="pp" style="position:absolute;padding:1vw;font-size:2vw;left:0;top:0;width:8vw;height:auto;border:none;"
+      onclick="play()">Pause</button>
+    <button id="r"
+      style="position:absolute;padding:1vw;font-size:2vw;left:8vw;top:0;width:8vw;height:auto;border-left:1px solid black;border-top:none;border-bottom:none;border-right:none;"
+      onclick="reset()">Reset</button>
+    <button id="c"
+      style="position:absolute;padding:1vw;font-size:2vw;left:16vw;top:0;width:8vw;height:auto;border-left:1px solid black;border-top:none;border-bottom:none;border-right:none;"
+      onclick="wipe()">Clear</button>
+    <button id="s"
+      style="position:absolute;padding:1vw;font-size:2vw;left:24vw;top:0;width:15vw;height:auto;border-left:1px solid black;border-top:none;border-bottom:none;border-right:none;font-size:2vw;"
+      onclick="still()">Mode: Osc</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
